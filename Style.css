@@ -1,0 +1,165 @@
+body {
+    font-family: "Ubuntu Mono", monospace;
+    background-color: #464646;
+
+}
+
+/*supaya teks dalam header dapat di modif,
+header harus di panggil, supaya nama di dalam header itu bisa di modif*/
+header {
+    background-color: #3f3f3f;
+    color: #e6ebe9;
+    text-align: center;
+    padding: 20px;
+
+}
+
+nav {
+    background-color: #636363;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0px;
+    text-align: center;
+    font-size: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    /*buat mengatur letak tulisan profile, resume, contact*/
+    margin-right: 0px;
+    /*buat mengatur jarak antar tulisan profile, resume, contact*/
+}
+
+/* untuk memodif tulisan yang ada di dalam nav>ul>li>a*/
+nav ul li a {
+    color: #00ffbb;
+    text-decoration: none;
+}
+
+.container {
+    width: 1000px;
+    margin : 20px auto;
+    margin-left: -16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+
+/*untuk mengatur letak agar bisa berletak kanan kiri sesuai dengan html*/
+    .left {
+        flex: 1;
+    }
+
+    .right {
+        flex: 3;
+    }
+}
+
+/*untuk menambah begraund dan mengedit begraund pada tulisan*/
+.card {
+    padding: 20px;
+    background-color: #B4B4B8;
+    margin: 0 0 20px 20px; /*untuk mengatur jarak antara begraund 
+    di belakang tulisan*/
+    box-shadow: 10px -10px #d4d3d3;
+    border-radius: 10px;
+
+}
+
+.profil {
+    text-align: center;
+
+
+
+    img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10%; /*mengatur gaya gambar profail 01*/
+    }
+}
+
+/*skill-box itu nama di dalam div class
+jika ingin memodif tinggal panggil nama di dalam div calss*/
+.skill-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    .skill {
+        flex: 1;
+        border-radius: 10px;
+        background-color: #88AB8E;
+        padding: 20px;
+        margin: 5px;
+        text-align: center;
+
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+.img-ig {
+        flex: 1;
+        border-radius: 10px;
+        width: 25%;
+        padding: 20px;
+        margin: 5px;
+        text-align: center;
+}
+
+.img-yt {
+
+        flex: 1;
+        border-radius: 10px;
+        width: 20%;
+        padding: 20px;
+        margin: 5px;
+        text-align: center;
+}
+
+.img-tt {
+
+        flex: 1;
+        border-radius: 10px;
+        width: 12%;
+        padding: 20px;
+        margin: 5px;
+        text-align: center;
+}
+
+.footer {
+       list-style-type: none;
+       width: 120%;
+       padding: 20px;
+       background-color: #222;
+       color: #00ffbb;
+       text-align: center;
+       font-size: 15px;
+       margin-top: 50px;
+       
+}
+
+/*responsive */
+@media (max-width:728px) {
+    .container {
+        width: 100%;
+
+        .left {
+            flex: 1;
+
+        }
+
+        .right {
+            flex: 1;
+        }
+    }
+
+}
